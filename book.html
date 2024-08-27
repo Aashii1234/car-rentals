@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Vehicle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Car Rentals</div>
+        <nav class="top-right-nav">
+            <a href="index.html">Home</a>
+            <a href="store.html">Store</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Select Your Vehicle</h2>
+        <section class="vehicles">
+            <div class="vehicle">
+                <img src="sedan.jpg" alt="Sedan">
+                <h3>Sedan</h3>
+                <p>Comfortable and stylish sedan perfect for city driving.</p>
+                <p>Price: $50/day</p>
+                <a href="#rent-sedan" class="rent-btn">Rent Now</a>
+                <div id="rent-sedan" class="rent-form">
+                    <form action="rent-confirmation.html" method="post">
+                        <div class="form-group">
+                            <label for="pickup-date-sedan">Pick-up Date:</label>
+                            <input type="date" id="pickup-date-sedan" name="pickup-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-date-sedan">Drop-off Date:</label>
+                            <input type="date" id="dropoff-date-sedan" name="dropoff-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-location-sedan">Pick-up Location:</label>
+                            <input type="text" id="pickup-location-sedan" name="pickup-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment-method-sedan">Payment Method:</label>
+                            <select id="payment-method-sedan" name="payment-method" required>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank-transfer">Bank Transfer</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="rent-btn">Confirm Rent</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Repeat the block below for additional vehicles -->
+            <div class="vehicle">
+                <img src="suv.jpg" alt="SUV">
+                <h3>SUV</h3>
+                <p>Spacious SUV ideal for family trips and off-road adventures.</p>
+                <p>Price: $80/day</p>
+                <a href="#rent-suv" class="rent-btn">Rent Now</a>
+                <div id="rent-suv" class="rent-form">
+                    <form action="rent-confirmation.html" method="post">
+                        <div class="form-group">
+                            <label for="pickup-date-suv">Pick-up Date:</label>
+                            <input type="date" id="pickup-date-suv" name="pickup-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoff-date-suv">Drop-off Date:</label>
+                            <input type="date" id="dropoff-date-suv" name="dropoff-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-location-suv">Pick-up Location:</label>
+                            <input type="text" id="pickup-location-suv" name="pickup-location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="payment-method-suv">Payment Method:</label>
+                            <select id="payment-method-suv" name="payment-method" required>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank-transfer">Bank Transfer</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="rent-btn">Confirm Rent</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Add up to 10 vehicle blocks here, modifying ids and form labels accordingly -->
+        </section>
+    </main>
+</body>
+</html>
